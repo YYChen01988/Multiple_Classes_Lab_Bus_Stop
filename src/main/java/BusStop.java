@@ -15,7 +15,7 @@ public class BusStop {
         this.queue.add(passenger);
     }
 
-    public void waitingPassengerLeft() {
-        this.queue.remove(0);
+    public Passenger waitingPassengerLeft() {
+        return this.queue.remove(0);
     }
 }
