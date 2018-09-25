@@ -29,4 +29,8 @@ public class Bus {
         this.passengerInBus.remove(0);
     }
 
+    public void pickUpPassengerFromBusStop(BusStop busStop) {
+        Passenger passenger = busStop.waitingPassengerLeft();
+        addPassenger(passenger);
+    }
 }
