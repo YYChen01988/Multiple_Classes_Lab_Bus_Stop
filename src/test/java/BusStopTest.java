@@ -23,4 +23,13 @@ public class BusStopTest {
         busStop.addWaitingPassenger(passenger);
         assertEquals(1,busStop.getNumberOfQueue());
     }
+
+    @Test
+    public void peopleLeftQueue() {
+        busStop.addWaitingPassenger(passenger);
+        busStop.addWaitingPassenger(passenger);
+        assertEquals(2,busStop.getNumberOfQueue());
+        busStop.waitingPassengerLeft();
+        assertEquals(1,busStop.getNumberOfQueue());
+    }
 }
