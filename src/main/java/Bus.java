@@ -24,4 +24,9 @@ public class Bus {
             this.passengerInBus.add(passenger);
         }
     }
+
+    public void removePassenger() {
+        this.passengerInBus.remove(0);
+    }
+
 }
